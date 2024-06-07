@@ -1,0 +1,59 @@
+body {
+    background-color: #f1edd0; /* color5 - Fondo general */
+    color: #55443d; /* color2 - Texto principal */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #55443d; 
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cde9ca; /* color4 - Fondo de los elementos */
+    border: 1px solid #a0cab5; /* color3 - Borde de los elementos */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+    border: 0px;
+  }
+  
+  .user-item:hover {
+    background-color: #a0cab5; /* color3 - Fondo de los elementos al pasar el mouse */
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #55443d; /* color2 - Texto de nombre de usuario */
+  }
+  
+  .details-button {
+    background-color: #f38a8a; /* color1 - Fondo del botón */
+    color: #ffffff; /* Blanco - Texto del botón */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .details-button:hover {
+    background-color: #cde9ca; /* color4 - Fondo del botón al pasar el mouse */
+    color: #55443d; /* color2 - Texto del botón al pasar el mouse */
+  }
+  

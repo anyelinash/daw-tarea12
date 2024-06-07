@@ -1,0 +1,37 @@
+/* Estilos para la lista de posts */
+.post-list-container {
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centrar la lista */
+    max-width: 600px; /* Limitar el ancho */
+  }
+  
+  .post-list li {
+    margin-bottom: 20px;
+    background-color: #f1edd0; /* Usando color5 de tu paleta */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .post-list li a {
+    display: block;
+    padding: 20px;
+    color: #333; /* Color de texto oscuro */
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .post-list li a:hover {
+    background-color: #cde9ca; /* Usando color4 de tu paleta */
+  }
+  
+  .post-list-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Color de texto oscuro */
+  }
+  

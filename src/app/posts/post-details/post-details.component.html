@@ -1,0 +1,29 @@
+<div class="post-container" *ngIf="post">
+  <div class="post-header">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <div class="post-meta">
+      <span class="post-likes"><i class="bi bi-suit-heart-fill" style="color: rgb(212, 71, 71);"></i> {{ post.likes }}</span>
+      <span class="post-author">{{ post.author }}</span>
+      <span class="post-date">{{ post.date | date }}</span>
+    </div>
+  </div>
+  <div class="post-image-container">
+    <img class="post-image" [src]="post.imageUrl" [alt]="post.title">
+  </div>
+  <div class="post-body">
+    <p>{{ post.body }}</p>
+  </div>
+  <div class="post-comments" *ngIf="post.comments.length > 0">
+    <h3> <i class="bi bi-chat-left-text-fill" style="color: rgb(82, 82, 194);"></i> Comentarios (<span class="post-comments">{{ post.comments.length }}</span>): </h3>
+    <ul>
+      <li *ngFor="let comment of post.comments">
+        <span class="comment-user">{{ comment.user }}:</span> <span class="comment-content">{{ comment.comment }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="no-comments" *ngIf="post.comments.length === 0">No hay comentarios aún.</div>
+</div>
+
+<div *ngIf="!post" class="post-details-container">
+  <p>No se ha seleccionado ningún post</p>
+</div>

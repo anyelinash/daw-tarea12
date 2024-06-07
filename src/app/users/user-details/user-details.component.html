@@ -1,0 +1,13 @@
+<div *ngIf="selectedUser" class="profile-container">
+  <div class="profile-header">
+    <img [src]="selectedUser.profileImage" alt="{{ selectedUser.name }} Imagen de Perfil">
+    <h2>{{ selectedUser.name }}</h2>
+  </div>
+  <div class="profile-details">
+    <h3>Descripción:</h3>
+    <p>{{ selectedUser.description }}</p>
+  </div>
+</div>
+<div *ngIf="!selectedUser">
+  <p>No user selected</p>
+</div>

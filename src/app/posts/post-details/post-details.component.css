@@ -1,0 +1,115 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.post-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px 60px 30px 60px;
+}
+
+.post-header {
+  text-align: center; /* Centrar el contenido del encabezado */
+  margin-bottom: 15px;
+}
+
+.post-header h2 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.post-meta {
+  display: block; /* Asegurarse de que los elementos estén uno debajo del otro */
+  text-align: right; /* Alinear elementos meta a la derecha */
+  color: #888;
+  font-size: 14px;
+}
+
+.post-meta span {
+  margin-right: 10px;
+}
+
+.post-meta i {
+  margin-right: 5px;
+}
+
+  /* Post Image */
+  .post-image-container {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .post-image {
+    width: 100%;
+    max-width: 600px; /* Adjust for desired image size */
+    border-radius: 5px;
+  }
+  
+  /* Post Body */
+  .post-body p {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Post Comments */
+  .post-comments {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  .post-comments h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .post-comments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .post-comments li {
+    margin-bottom: 10px;
+  }
+  
+  .comment-user {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .comment-content {
+    color: #666;
+  }
+  
+  /* No Comments Message */
+  .no-comments {
+    text-align: center;
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Optional: Responsiveness */
+  @media (max-width: 768px) {
+    .post-container {
+      width: 100%;
+    }
+  
+    .post-header h2 {
+      font-size: 20px;
+    }
+  
+    .post-image {
+      max-width: 100%; /* Adjust for smaller screens */
+    }
+  }
+  
